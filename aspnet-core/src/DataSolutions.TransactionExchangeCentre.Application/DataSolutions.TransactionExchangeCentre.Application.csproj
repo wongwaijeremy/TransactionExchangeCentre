@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>DataSolutions.TransactionExchangeCentre.Application</AssemblyName>
+    <PackageId>DataSolutions.TransactionExchangeCentre.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>DataSolutions.TransactionExchangeCentre</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>FEATURE_SIGNALR_ASPNETCORE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.HangFire.AspNetCore" Version="3.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataSolutions.TransactionExchangeCentre.Core\DataSolutions.TransactionExchangeCentre.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Hangfire.Core">
+      <HintPath>C:\Users\Jeremy.Wong\.nuget\packages\hangfire.core\1.6.19\lib\netstandard1.3\Hangfire.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
